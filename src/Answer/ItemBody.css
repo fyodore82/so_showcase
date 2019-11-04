@@ -1,0 +1,15 @@
+.itembodypre {
+  background-color: #EFF0F1;
+  margin-bottom: 1em;
+  margin-top: 0;
+  padding: 12px 8px;
+}
+.itembodyp {
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.itembodycode {
+  padding: 1px 5px;
+  background-color: #EFF0F1;
+}
