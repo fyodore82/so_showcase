@@ -9,7 +9,8 @@
 /coverage
 
 # production
-/build
+# Don't ignore to be able to upload to git
+#/build
 
 # misc
 .DS_Store

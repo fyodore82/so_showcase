@@ -3,6 +3,8 @@
   margin-bottom: 1em;
   margin-top: 0;
   padding: 12px 8px;
+  overflow-x: auto;
+  word-wrap: none;
 }
 .itembodyp {
   margin-top: 0;

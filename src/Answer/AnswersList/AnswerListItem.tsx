@@ -6,6 +6,7 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Divider from '@material-ui/core/Divider';
+import Grid from '@material-ui/core/Grid'
 
 import { ItemBody } from '../ItemBody'
 
@@ -27,7 +28,14 @@ const useStyles = makeStyles((theme: Theme) =>
       top: 0,
       backgroundColor: 'inherit',
       boxShadow: '0px 2px gainsboro',
-    }
+    },
+    contentsGridItem: {
+      flexGrow: 1,
+    },
+    qaGridItem: {
+      fontSize: 'xx-large',
+      padding: '1rem',
+    },
   }),
 );
 
@@ -51,17 +59,37 @@ export const AnswerListItem: FC<AnswerListItemOwnProps> = ({
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography className={classes.heading} dangerouslySetInnerHTML={{'__html': header}}/>
+          <Typography className={classes.heading} dangerouslySetInnerHTML={{ '__html': header }} />
         </ExpansionPanelSummary>
         <ExpansionPanelDetails className={classes.extensionDetail}>
-          <div>
-          <ItemBody bodyText={question}/>
-          </div>
-          <Divider/>
-          <ItemBody bodyText={answer}/>
+          <Grid container direction="column">
+            <Grid item>
+              <Grid container direction="row">
+                <Grid item className={classes.qaGridItem}>
+                  Q
+            </Grid>
+                <Grid item className={classes.contentsGridItem}>
+                  <ItemBody bodyText={question} />
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid item>
+              <Divider/>
+            </Grid>
+            <Grid item>
+              <Grid container direction="row">
+                <Grid item className={classes.qaGridItem}>
+                  A
+            </Grid>
+                <Grid item className={classes.contentsGridItem}>
+                  <ItemBody bodyText={answer} />
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
         </ExpansionPanelDetails>
       </ExpansionPanel>
-      
+
     </div>
   );
 }

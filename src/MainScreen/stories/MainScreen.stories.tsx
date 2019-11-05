@@ -3,10 +3,10 @@ import React from 'react';
 import { MemoryRouter, withRouter } from 'react-router-dom';
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
-import MainScreen from '../MainScreen';
-import { storeFactory } from '../store/store.mock'
+import MainScreen from '..';
+import { storeFactory } from '../../store/store.mock'
 import { Provider } from 'react-redux'
-import { Answers } from '../store/Answers'
+import { Answers } from '../../store/Answers'
 
 const TSanswers: Answers = {
   '56749824': {

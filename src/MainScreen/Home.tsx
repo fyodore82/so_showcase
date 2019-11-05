@@ -1,20 +1,48 @@
 import React, { FC } from 'react';
 
+import { createStyles, Theme, makeStyles } from '@material-ui/core/styles';
+
 import Typography from '@material-ui/core/Typography';
+import Paper from '@material-ui/core/Paper'
+import Link from '@material-ui/core/Link'
+
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    typography: {
+      margin: '1rem',
+    },
+  }),
+);
 
 export const Home: FC = () => {
+  const classes = useStyles();
   return (
-    <Typography paragraph>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-      ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
-      facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
-      gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id
-      donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
-      adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.
-      Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Mauris commodo quis
-      imperdiet massa tincidunt. Cras tincidunt lobortis feugiat vivamus at augue. At augue eget
-      arcu dictum varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem
-      donec massa sapien faucibus et molestie ac.
+    <Paper>
+      <Typography paragraph className={classes.typography}>
+        This application will fetch selected posts from StackOverflow and present them
+        grouped by primary Tag.
 </Typography>
+      <Typography paragraph className={classes.typography}>
+        Application (SPA) is based on:
+      <ul>
+          <li>React</li>
+          <li>Typescript</li>
+          <li>Redux for storing state (questions and answers)</li>
+          <li>Redux-Saga for async actions like fetching posts</li>
+          <li>Storybook for developing components in isolation</li>
+          <li>Jest for unittesting</li>
+          <li>Material UI for building interface</li>
+        </ul>
+      </Typography>
+      <Typography paragraph className={classes.typography}>
+        Source is located on <Link href='https://github.com/fyodore82/so_showcase'>GitHub</Link>
+      </Typography>
+      <Typography paragraph className={classes.typography}>
+        Then app is built and put on gist where you can explore it.
+      </Typography>
+      <Typography paragraph className={classes.typography}>
+        Hope you enjoy it!
+      </Typography>
+    </Paper>
   )
 }

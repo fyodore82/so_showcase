@@ -8,7 +8,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import { connect } from 'react-redux'
 
-import { AnswerTags } from '../Constants'
+import { AnswerTags, drawerWidth } from '../Constants'
 import { ApplicationBar } from './ApplicationBar'
 import { SideMenu } from './SideMenu'
 import { Home } from './Home'
@@ -27,6 +27,14 @@ const useStyles = makeStyles((theme: Theme) =>
       flexGrow: 1,
       backgroundColor: theme.palette.background.default,
       padding: theme.spacing(3),
+
+      height: '100%',
+      width: `calc(100% - ${drawerWidth}px)`,
+      left: drawerWidth,
+      top: 0,
+      position: "absolute",
+      display: 'flex',
+      flexDirection: 'column',
     },
   }),
 );
@@ -66,6 +74,7 @@ export const MainScreen: FC<MainScreenProps> = ({ isLoading, answers }) => {
         <ApplicationBar />
         <SideMenu>
           <List>
+            <MenuItem to='/' name='Home' Icon={InboxIcon} />
             {Object.values(MunuAndRoutes).map(m => m.menuName)}
           </List>
         </SideMenu>
