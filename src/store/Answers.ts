@@ -43,7 +43,7 @@ export const sagaActions = [
   }
 ];
 
-function* requestQAs() {
+export function* requestQAs() {
   try {
     let k: AnswerTags;
     for (k in selectedAnswers) {
@@ -68,7 +68,7 @@ function* requestQAs() {
 }
 
 export interface RequestQAsAction extends Action { type: 'REQUEST_QA' }
-interface ReceiveQAsAction extends Action { type: 'RECEIVE_QA'; error?: string, answers?: Answers, tag?: AnswerTags }
+export interface ReceiveQAsAction extends Action { type: 'RECEIVE_QA'; error?: string, answers?: Answers, tag?: AnswerTags }
 
 type KnownActions = RequestQAsAction | ReceiveQAsAction;
 

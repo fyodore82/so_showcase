@@ -18,4 +18,5 @@ const answers: Answers = {
 }
 
 storiesOf('AnswerList', module)
-  .add('default', () => <AnswerList answers={answers}/>)
+  .add('default', () => <AnswerList answers={answers} isLoading={false}/>)
+  .add('loading', () => <AnswerList isLoading={true}/>)

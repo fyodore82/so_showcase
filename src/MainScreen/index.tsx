@@ -42,20 +42,20 @@ const useStyles = makeStyles((theme: Theme) =>
 const MunuAndRoutes: {
   [keys in AnswerTags]: {
     menuName: JSX.Element;
-    route: (answers?: Answers.Answers) => JSX.Element;
+    route: (isLoading: boolean, answers?: Answers.Answers) => JSX.Element;
   }
 } = {
   typescript: {
     menuName: <MenuItem to='/typescript' name='TypeScript' Icon={InboxIcon} />,
-    route: answers => <Route exact path='/typescript' render={() => <AnswerList answers={answers} />} />,
+    route: (isLoading, answers) => <Route exact path='/typescript' render={() => <AnswerList answers={answers} isLoading={isLoading} />} />,
   },
   react: {
     menuName: <MenuItem to='/react' name='React' Icon={InboxIcon} />,
-    route: answers => <Route exact path='/react' render={() => <AnswerList answers={answers} />} />,
+    route: (isLoading, answers) => <Route exact path='/react' render={() => <AnswerList answers={answers} isLoading={isLoading} />} />,
   },
   redux: {
     menuName: <MenuItem to='/redux' name='Redux' Icon={InboxIcon} />,
-    route: answers => <Route exact path='/redux' render={() => <AnswerList answers={answers} />} />,
+    route: (isLoading, answers) => <Route exact path='/redux' render={() => <AnswerList answers={answers} isLoading={isLoading} />} />,
   },
 }
 
@@ -67,8 +67,6 @@ export const MainScreen: FC<MainScreenProps> = ({ isLoading, answers }) => {
   const classes = useStyles();
 
   return (
-    isLoading ? <div>Loading...</div>
-      :
       <div className={classes.root}>
         <CssBaseline />
         <ApplicationBar />
@@ -81,7 +79,7 @@ export const MainScreen: FC<MainScreenProps> = ({ isLoading, answers }) => {
         <main className={classes.content}>
           <div className={classes.toolbar} />
           <Switch>
-            {Object.entries(MunuAndRoutes).map(([k, v]) => v.route(answers[k as AnswerTags]))}
+            {Object.entries(MunuAndRoutes).map(([k, v]) => v.route(isLoading, answers[k as AnswerTags]))}
             <Route exact path='/' component={Home} />
           </Switch>
         </main>
