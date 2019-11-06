@@ -31,11 +31,16 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     contentsGridItem: {
       flexGrow: 1,
+      minWidth: 0,
     },
     qaGridItem: {
       fontSize: 'xx-large',
       padding: '1rem',
     },
+    divider: {
+      height: '3px',
+      margin: '1rem',
+    }
   }),
 );
 
@@ -62,34 +67,29 @@ export const AnswerListItem: FC<AnswerListItemOwnProps> = ({
           <Typography className={classes.heading} dangerouslySetInnerHTML={{ '__html': header }} />
         </ExpansionPanelSummary>
         <ExpansionPanelDetails className={classes.extensionDetail}>
-          <Grid container direction="column">
-            <Grid item>
-              <Grid container direction="row">
-                <Grid item className={classes.qaGridItem}>
-                  Q
-            </Grid>
-                <Grid item className={classes.contentsGridItem}>
-                  <ItemBody bodyText={question} />
+          <Grid container direction="column" wrap="nowrap">
+            <Grid item container direction="row" wrap="nowrap">
+              <Grid item className={classes.qaGridItem}>
+                Q
                 </Grid>
+              <Grid item className={classes.contentsGridItem}>
+                <ItemBody bodyText={question} />
               </Grid>
             </Grid>
             <Grid item>
-              <Divider/>
+              <Divider className={classes.divider}/>
             </Grid>
-            <Grid item>
-              <Grid container direction="row">
-                <Grid item className={classes.qaGridItem}>
-                  A
-            </Grid>
-                <Grid item className={classes.contentsGridItem}>
-                  <ItemBody bodyText={answer} />
+            <Grid item container direction="row" wrap="nowrap">
+              <Grid item className={classes.qaGridItem}>
+                A
                 </Grid>
+              <Grid item className={classes.contentsGridItem}>
+                <ItemBody bodyText={answer} />
               </Grid>
             </Grid>
           </Grid>
         </ExpansionPanelDetails>
       </ExpansionPanel>
-
     </div>
   );
 }
