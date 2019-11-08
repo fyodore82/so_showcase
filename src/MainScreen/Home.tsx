@@ -54,10 +54,10 @@ export const Home: FC = () => {
         </ul>
       </Typography>
       <Typography paragraph className={classes.typography}>
-        Source is located on <Link href='https://github.com/fyodore82/so_showcase'>GitHub</Link>
+        The app is built from source, which is located on <Link href='https://github.com/fyodore82/so_showcase'>GitHub</Link>
       </Typography>
       <Typography paragraph className={classes.typography}>
-        Then app is built and put on gist where you can explore it.
+        Then app is built and put on Glitch where you can explore it.
       </Typography>
       <Typography paragraph className={classes.typography}>
         Hope you enjoy it!
