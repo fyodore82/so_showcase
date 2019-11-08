@@ -5,12 +5,15 @@ import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 
+import ErrorPopper from './errorPopper';
+
 import configureStore from './ConfigureStore'
 
 const store = configureStore();
 
 ReactDOM.render(
   <Provider store={store}>
+    <ErrorPopper/>
     <BrowserRouter>
       <MainScreen />
     </BrowserRouter>

@@ -1,0 +1,1554 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots AnswerList default 1`] = `
+<div
+  className="makeStyles-answerList-1"
+>
+  <div
+    className="makeStyles-root-2"
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation1 MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-rounded"
+    >
+      <div
+        aria-controls="panel1a-content"
+        aria-disabled={false}
+        aria-expanded={false}
+        className="MuiButtonBase-root MuiExpansionPanelSummary-root makeStyles-expansionSummary-5"
+        id="panel1a-header"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <div
+          className="MuiExpansionPanelSummary-content"
+        >
+          <p
+            className="MuiTypography-root makeStyles-heading-3 MuiTypography-body1"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Type &#39;{}&#39; is not assignable to type &#39;T&#39;",
+              }
+            }
+          />
+        </div>
+        <div
+          aria-disabled={false}
+          aria-hidden={true}
+          className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role={null}
+          tabIndex={null}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div
+        className="MuiCollapse-container MuiCollapse-hidden"
+        style={
+          Object {
+            "minHeight": "0px",
+          }
+        }
+      >
+        <div
+          className="MuiCollapse-wrapper"
+        >
+          <div
+            className="MuiCollapse-wrapperInner"
+          >
+            <div
+              aria-labelledby="panel1a-header"
+              id="panel1a-content"
+              role="region"
+            >
+              <div
+                className="MuiExpansionPanelDetails-root makeStyles-extensionDetail-4"
+              >
+                <div
+                  className="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column MuiGrid-wrap-xs-nowrap"
+                >
+                  <div
+                    className="MuiGrid-root makeStyles-link-9 MuiGrid-item"
+                  >
+                    <a
+                      className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+                      href="https://stackoverflow.com/questions/56749824"
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                    >
+                      Link to question on StackOverflow
+                    </a>
+                  </div>
+                  <div
+                    className="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-wrap-xs-nowrap"
+                  >
+                    <div
+                      className="MuiGrid-root makeStyles-qaGridItem-7 MuiGrid-item"
+                    >
+                      Q
+                    </div>
+                    <div
+                      className="MuiGrid-root makeStyles-contentsGridItem-6 MuiGrid-item"
+                    >
+                      <div
+                        className="makeStyles-root-213"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "<pre class='itembodypre'><code class='itembodycode'>function f1&lt;T extends {[prop: string]: any}}&gt;(a: T = {}) {
+    console.log(a)
+}
+</code></pre>
+
+<blockquote>
+  <p class='itembodyp'>Error: Type '{}' is not assignable to type 'T'.</p>
+</blockquote>
+
+<p class='itembodyp'>im trying to give a a default value. im not trying to give T a default type. </p>
+
+<p class='itembodyp'>I'm not sure what is the problem.</p>
+",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className="MuiGrid-root MuiGrid-item"
+                  >
+                    <hr
+                      className="MuiDivider-root makeStyles-divider-8"
+                    />
+                  </div>
+                  <div
+                    className="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-wrap-xs-nowrap"
+                  >
+                    <div
+                      className="MuiGrid-root makeStyles-qaGridItem-7 MuiGrid-item"
+                    >
+                      A
+                    </div>
+                    <div
+                      className="MuiGrid-root makeStyles-contentsGridItem-6 MuiGrid-item"
+                    >
+                      <div
+                        className="makeStyles-root-213"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "<p class='itembodyp'>Consider  the following example</p>
+
+<pre class='itembodypre'><code class='itembodycode'>type A = { [prop: string]: any };
+type B = { [prop: string]: any; prop1: string };
+</code></pre>
+
+<p class='itembodyp'>Does type <code class='itembodycode'>B</code> extend type <code class='itembodycode'>A</code>? Yes!</p>
+
+<p class='itembodyp'>But the following will not work</p>
+
+<pre class='itembodypre'><code class='itembodycode'>let a: A = {};
+let b: B = a; // Error
+</code></pre>
+
+<p class='itembodyp'>It's clear that type <code class='itembodycode'>A</code> misses required property <code class='itembodycode'>prop1</code>, so variable <code class='itembodycode'>a</code> is not assignable to variable <code class='itembodycode'>b</code>.</p>
+
+<p class='itembodyp'>The same issue is with your function. When you do</p>
+
+<pre class='itembodypre'><code class='itembodycode'>function f1&lt;T extends { [prop: string]: any }&gt;(a: T = {}) {
+    console.log(a);
+}
+</code></pre>
+
+<p class='itembodyp'>Compiler says that object <code class='itembodycode'>{}</code> is not assignable to type <code class='itembodycode'>T</code>. If this worked, you could do</p>
+
+<pre class='itembodypre'><code class='itembodycode'>f1&lt;B&gt;();  // a will equal to {} and misses required prop1
+</code></pre>
+
+<p class='itembodyp'>This may not look like error, as inside <code class='itembodycode'>f1</code> you only know that <code class='itembodycode'>T extends { [prop: string]: any }</code> and know nothing about <code class='itembodycode'>prop1</code>. But consider if you want return <code class='itembodycode'>T</code>:</p>
+
+<pre class='itembodypre'><code class='itembodycode'>function f1&lt;T extends { [prop: string]: any }&gt;(a: T = {}): T {
+    console.log(a);
+    return a;
+}
+</code></pre>
+
+<p class='itembodyp'>If this code would work it would introduce a bug</p>
+
+<pre class='itembodypre'><code class='itembodycode'>let bb: B = f1&lt;B&gt;();  // Here bb will be equal to empty object
+let s: string = bb.prop1;  // Compiler will not show error, as it thinks that bb has prop1 of type string. But in reality it is undefined.
+</code></pre>
+
+<p class='itembodyp'>So there are following solutions to consider:</p>
+
+<ol>
+<li><p class='itembodyp'>Remove all generics. Type <code class='itembodycode'>{ [prop: string]: any }</code> is generic by itself so it may suit your needs</p>
+
+<pre class='itembodypre'><code class='itembodycode'>function f1(a: { [prop: string]: any } = {}) {
+    console.log(a);
+    return a;
+}
+</code></pre></li>
+<li><p class='itembodyp'>Make <code class='itembodycode'>a</code> fully optional. In this case <code class='itembodycode'>a</code> may equal to <code class='itembodycode'>undefined</code> and compiler would know about it. </p>
+
+<pre class='itembodypre'><code class='itembodycode'>function f1&lt;T extends { [prop: string]: any } = {}&gt;(a?: T) {
+    console.log(a);
+}
+</code></pre>
+
+<p class='itembodyp'>If you return <code class='itembodycode'>a</code> compiler will tell you that you should either return union type (with <code class='itembodycode'>undefined</code>) or check in function body that <code class='itembodycode'>a</code> is not <code class='itembodycode'>undefined</code>.</p></li>
+<li><p class='itembodyp'>Worst case from my point of view is to use type cast as already suggested</p>
+
+<pre class='itembodypre'><code class='itembodycode'>function f1&lt;T extends { [prop: string]: any }&gt;(a: T = {} as T) {
+    console.log(a);
+}
+</code></pre>
+
+<p class='itembodyp'>But be careful and don't forget that you can miss some required properties in this case.</p></li>
+</ol>
+",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="makeStyles-root-2"
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation1 MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-rounded"
+    >
+      <div
+        aria-controls="panel1a-content"
+        aria-disabled={false}
+        aria-expanded={false}
+        className="MuiButtonBase-root MuiExpansionPanelSummary-root makeStyles-expansionSummary-5"
+        id="panel1a-header"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <div
+          className="MuiExpansionPanelSummary-content"
+        >
+          <p
+            className="MuiTypography-root makeStyles-heading-3 MuiTypography-body1"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "issue with types when using &quot;withRouter&quot; and Typescript",
+              }
+            }
+          />
+        </div>
+        <div
+          aria-disabled={false}
+          aria-hidden={true}
+          className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role={null}
+          tabIndex={null}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div
+        className="MuiCollapse-container MuiCollapse-hidden"
+        style={
+          Object {
+            "minHeight": "0px",
+          }
+        }
+      >
+        <div
+          className="MuiCollapse-wrapper"
+        >
+          <div
+            className="MuiCollapse-wrapperInner"
+          >
+            <div
+              aria-labelledby="panel1a-header"
+              id="panel1a-content"
+              role="region"
+            >
+              <div
+                className="MuiExpansionPanelDetails-root makeStyles-extensionDetail-4"
+              >
+                <div
+                  className="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column MuiGrid-wrap-xs-nowrap"
+                >
+                  <div
+                    className="MuiGrid-root makeStyles-link-9 MuiGrid-item"
+                  >
+                    <a
+                      className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+                      href="https://stackoverflow.com/questions/56979012"
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                    >
+                      Link to question on StackOverflow
+                    </a>
+                  </div>
+                  <div
+                    className="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-wrap-xs-nowrap"
+                  >
+                    <div
+                      className="MuiGrid-root makeStyles-qaGridItem-7 MuiGrid-item"
+                    >
+                      Q
+                    </div>
+                    <div
+                      className="MuiGrid-root makeStyles-contentsGridItem-6 MuiGrid-item"
+                    >
+                      <div
+                        className="makeStyles-root-213"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "<p class='itembodyp'>I'm trying to get some more deep knowledge and practice into React+Typescript, and I've come across this typing error when using <code class='itembodycode'>withRouter</code> from <code class='itembodycode'>react-router-dom</code>. </p>
+
+<p class='itembodyp'>My code snippet is very simple, and I've tried finding out people with the same issue, and some of the answers pointed to an error with an upgrade (but they were from 2016, so...) and some of them were using a <code class='itembodycode'>connect()</code> statement which I am not making use of (which lead to the question, \\"Am I doing this wrong because of not using it?\\"). I see that some of those suggestions also involved mapping Props to State, which I haven't done (nor seen) until now. I hope someone has some suggestions on what am I missing and what else I should be looking at.</p>
+
+<p class='itembodyp'>The code is:</p>
+
+<pre class=\\"lang-js prettyprint-override\\"><code class='itembodycode'>import React from \\"react\\";
+import { withRouter } from \\"react-router-dom\\";
+
+interface ISection {
+  id: number;
+  title: string;
+  imageUrl: string;
+  size: string;
+}
+
+class MenuItem extends React.Component&lt;ISection&gt; {
+  render() {
+    return (
+      &lt;div className={\`\${this.props.size} menu-item\`}&gt;
+        &lt;div
+          className=\\"background-image\\"
+          style={{ backgroundImage: \`url(\${this.props.imageUrl})\` }}
+        /&gt;
+        &lt;div className=\\"content\\"&gt;
+          &lt;h1 className=\\"title\\"&gt;{this.props.title}&lt;/h1&gt;
+          &lt;span className=\\"subtitle\\"&gt;some subtitle&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+
+export default withRouter(MenuItem);
+</code></pre>
+
+<p class='itembodyp'>What I would be expecting from here is to work smoothly (I have to say that I tried first with a functional component since I don't have any state, but all the solutions I saw involved a class component, so I moved it into it), but instead I'm getting the following error on the <code class='itembodycode'>MenuItem</code> in the last line:</p>
+
+<pre class='itembodypre'><code class='itembodycode'>Argument of type 'typeof MenuItem' is not assignable to parameter of type 'ComponentClass&lt;RouteComponentProps&lt;any, StaticContext, any&gt;, any&gt; | FunctionComponent&lt;RouteComponentProps&lt;any, StaticContext, any&gt;&gt; | (FunctionComponent&lt;RouteComponentProps&lt;any, StaticContext, any&gt;&gt; &amp; ComponentClass&lt;...&gt;) | (ComponentClass&lt;...&gt; &amp; FunctionComponent&lt;...&gt;)'.
+  Type 'typeof MenuItem' is not assignable to type 'ComponentClass&lt;RouteComponentProps&lt;any, StaticContext, any&gt;, any&gt;'.
+    Types of parameters 'props' and 'props' are incompatible.
+      Type 'RouteComponentProps&lt;any, StaticContext, any&gt;' is missing the following properties from type 'Readonly&lt;ISection&gt;': id, title, imageUrl, sizets(2345)
+</code></pre>
+
+<p class='itembodyp'>My questions are:</p>
+
+<ol>
+<li><p class='itembodyp'>Why does it say \\"type 'typeof MenuItem'\\"? Shouldn't it just say the type of 'MenuItem' instead of the function to obtain the type?</p></li>
+<li><p class='itembodyp'>Is it necessary for withRouter to work with class components, or does it also work on functional components?</p></li>
+<li><p class='itembodyp'>Do I need to <code class='itembodycode'>connect()</code> something, or map Props onto State? If so, why?</p></li>
+<li><p class='itembodyp'>And lastly, how can I fix this?</p></li>
+</ol>
+",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className="MuiGrid-root MuiGrid-item"
+                  >
+                    <hr
+                      className="MuiDivider-root makeStyles-divider-8"
+                    />
+                  </div>
+                  <div
+                    className="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-wrap-xs-nowrap"
+                  >
+                    <div
+                      className="MuiGrid-root makeStyles-qaGridItem-7 MuiGrid-item"
+                    >
+                      A
+                    </div>
+                    <div
+                      className="MuiGrid-root makeStyles-contentsGridItem-6 MuiGrid-item"
+                    >
+                      <div
+                        className="makeStyles-root-213"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "<p class='itembodyp'>As of <a href=\\"https://github.com/ReactTraining/react-router/blob/e634f0bad7796d128a4c4e2c4678487dd7256be2/packages/react-router/docs/api/withRouter.md\\" rel=\\"noreferrer\\">documentation</a>, <code class='itembodycode'>withRouter</code> will pass updated <code class='itembodycode'>match</code>, <code class='itembodycode'>location</code>, and <code class='itembodycode'>history</code> props to the wrapped component whenever it renders. </p>
+
+<p class='itembodyp'>So <code class='itembodycode'>MenuItem</code> component should have props to receive them. For now, <code class='itembodycode'>MenuItem</code> component has props of type <code class='itembodycode'>ISection</code> which does not include router props.</p>
+
+<p class='itembodyp'>The easiest way to add router props is to intersect <code class='itembodycode'>ISection</code> with <code class='itembodycode'>RouteComponentProps</code>.</p>
+
+<pre class='itembodypre'><code class='itembodycode'>import { withRouter, RouteComponentProps } from \\"react-router-dom\\";
+
+// ...
+class MenuItem extends React.Component&lt;ISection &amp; RouteComponentProps&gt; {
+</code></pre>
+
+<p class='itembodyp'>Full code is</p>
+
+<pre class='itembodypre'><code class='itembodycode'>import * as React from 'react';
+import { withRouter, RouteComponentProps } from \\"react-router-dom\\";
+
+interface ISection {
+    id: number;
+    title: string;
+    imageUrl: string;
+    size: string;
+}
+
+class MenuItem extends React.Component&lt;ISection &amp; RouteComponentProps&gt; {
+    render() {
+        return (
+            &lt;div className={\`\${this.props.size} menu-item\`}&gt;
+                &lt;div
+                    className=\\"background-image\\"
+                    style={{ backgroundImage: \`url(\${this.props.imageUrl})\` }}
+                /&gt;
+                &lt;div className=\\"content\\"&gt;
+                    &lt;h1 className=\\"title\\"&gt;{this.props.title}&lt;/h1&gt;
+                    &lt;span className=\\"subtitle\\"&gt;some subtitle&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        );
+    }
+}
+
+export default withRouter(MenuItem);
+</code></pre>
+
+<p class='itembodyp'>And answers to your questions</p>
+
+<ol>
+<li><p class='itembodyp'>Why does it say \\"type 'typeof MenuItem'\\"? Shouldn't it just say the type of 'MenuItem' instead of the function to obtain the type?</p>
+
+<p class='itembodyp'>Error arisen from types incompatibility. <code class='itembodycode'>MenuItem</code> is class, not type. To get type of <code class='itembodycode'>MenuItem</code> you should use <code class='itembodycode'>typeof MenuItem</code>. So <code class='itembodycode'>typeof MenuItem</code> is type. And compiler says correctly, \\"type <code class='itembodycode'>typeof MenuItem</code>\\".</p></li>
+<li><p class='itembodyp'>Is it necessary for withRouter to work with class components, or does it also work on functional components?</p>
+
+<p class='itembodyp'>It is allowed to work with class component and with functional component.</p>
+
+<p class='itembodyp'>This is how your component will look like if implemented as functional</p>
+
+<pre class='itembodypre'><code class='itembodycode'>const Cmp1: React.FunctionComponent&lt;ISection &amp; RouteComponentProps&gt; = (props) =&gt; {
+    return (
+        &lt;div className={\`\${props.size} menu-item\`}&gt;
+            &lt;div
+                className=\\"background-image\\"
+                style={{ backgroundImage: \`url(\${props.imageUrl})\` }}
+            /&gt;
+            &lt;div className=\\"content\\"&gt;
+                &lt;h1 className=\\"title\\"&gt;{props.title}&lt;/h1&gt;
+                &lt;span className=\\"subtitle\\"&gt;some subtitle&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    );
+}
+
+const WrappedCmp = withRouter(Cmp1);
+</code></pre></li>
+<li><p class='itembodyp'>Do I need to <code class='itembodycode'>connect()</code> something, or map Props onto State? If so, why?</p>
+
+<p class='itembodyp'>No, this is not strict requirement. <code class='itembodycode'>connect</code> is part of Redux, so if you use Redux you may connect. Here is <a href=\\"https://github.com/ReactTraining/react-router/blob/e634f0bad7796d128a4c4e2c4678487dd7256be2/packages/react-router/docs/api/withRouter.md#important-note\\" rel=\\"noreferrer\\">documentation</a> of how to use <code class='itembodycode'>withRouter</code> with <code class='itembodycode'>connect</code>. But again, it is not required.</p></li>
+<li><p class='itembodyp'>And lastly, how can I fix this?</p>
+
+<p class='itembodyp'>Already answered. See above :-)</p></li>
+</ol>
+",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots AnswerList loading 1`] = `
+<div
+  className="makeStyles-answerList-220"
+>
+  <div
+    className="makeStyles-root-221"
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation1 MuiExpansionPanel-root makeStyles-expansionPanel-222 Mui-disabled MuiExpansionPanel-rounded MuiPaper-rounded"
+    >
+      <div
+        aria-controls="panel1a-content"
+        aria-disabled={true}
+        aria-expanded={false}
+        className="MuiButtonBase-root MuiExpansionPanelSummary-root Mui-disabled Mui-disabled"
+        id="panel1a-header"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex={-1}
+      >
+        <div
+          className="MuiExpansionPanelSummary-content"
+        >
+          <div
+            className="MuiLinearProgress-root MuiLinearProgress-colorPrimary makeStyles-lineralProgress-223 MuiLinearProgress-indeterminate"
+            role="progressbar"
+          >
+            <div
+              className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Indeterminate"
+              style={Object {}}
+            />
+            <div
+              className="MuiLinearProgress-bar MuiLinearProgress-bar2Indeterminate MuiLinearProgress-barColorPrimary"
+              style={Object {}}
+            />
+          </div>
+        </div>
+        <div
+          aria-disabled={false}
+          aria-hidden={true}
+          className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role={null}
+          tabIndex={null}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div
+        className="MuiCollapse-container MuiCollapse-hidden"
+        style={
+          Object {
+            "minHeight": "0px",
+          }
+        }
+      >
+        <div
+          className="MuiCollapse-wrapper"
+        >
+          <div
+            className="MuiCollapse-wrapperInner"
+          >
+            <div
+              aria-labelledby="panel1a-header"
+              id="panel1a-content"
+              role="region"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="makeStyles-root-221"
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation1 MuiExpansionPanel-root makeStyles-expansionPanel-222 Mui-disabled MuiExpansionPanel-rounded MuiPaper-rounded"
+    >
+      <div
+        aria-controls="panel1a-content"
+        aria-disabled={true}
+        aria-expanded={false}
+        className="MuiButtonBase-root MuiExpansionPanelSummary-root Mui-disabled Mui-disabled"
+        id="panel1a-header"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex={-1}
+      >
+        <div
+          className="MuiExpansionPanelSummary-content"
+        >
+          <div
+            className="MuiLinearProgress-root MuiLinearProgress-colorPrimary makeStyles-lineralProgress-223 MuiLinearProgress-indeterminate"
+            role="progressbar"
+          >
+            <div
+              className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Indeterminate"
+              style={Object {}}
+            />
+            <div
+              className="MuiLinearProgress-bar MuiLinearProgress-bar2Indeterminate MuiLinearProgress-barColorPrimary"
+              style={Object {}}
+            />
+          </div>
+        </div>
+        <div
+          aria-disabled={false}
+          aria-hidden={true}
+          className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role={null}
+          tabIndex={null}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div
+        className="MuiCollapse-container MuiCollapse-hidden"
+        style={
+          Object {
+            "minHeight": "0px",
+          }
+        }
+      >
+        <div
+          className="MuiCollapse-wrapper"
+        >
+          <div
+            className="MuiCollapse-wrapperInner"
+          >
+            <div
+              aria-labelledby="panel1a-header"
+              id="panel1a-content"
+              role="region"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="makeStyles-root-221"
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation1 MuiExpansionPanel-root makeStyles-expansionPanel-222 Mui-disabled MuiExpansionPanel-rounded MuiPaper-rounded"
+    >
+      <div
+        aria-controls="panel1a-content"
+        aria-disabled={true}
+        aria-expanded={false}
+        className="MuiButtonBase-root MuiExpansionPanelSummary-root Mui-disabled Mui-disabled"
+        id="panel1a-header"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex={-1}
+      >
+        <div
+          className="MuiExpansionPanelSummary-content"
+        >
+          <div
+            className="MuiLinearProgress-root MuiLinearProgress-colorPrimary makeStyles-lineralProgress-223 MuiLinearProgress-indeterminate"
+            role="progressbar"
+          >
+            <div
+              className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Indeterminate"
+              style={Object {}}
+            />
+            <div
+              className="MuiLinearProgress-bar MuiLinearProgress-bar2Indeterminate MuiLinearProgress-barColorPrimary"
+              style={Object {}}
+            />
+          </div>
+        </div>
+        <div
+          aria-disabled={false}
+          aria-hidden={true}
+          className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role={null}
+          tabIndex={null}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div
+        className="MuiCollapse-container MuiCollapse-hidden"
+        style={
+          Object {
+            "minHeight": "0px",
+          }
+        }
+      >
+        <div
+          className="MuiCollapse-wrapper"
+        >
+          <div
+            className="MuiCollapse-wrapperInner"
+          >
+            <div
+              aria-labelledby="panel1a-header"
+              id="panel1a-content"
+              role="region"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots AnswerListItem default 1`] = `
+<div
+  className="makeStyles-root-308"
+>
+  <div
+    className="MuiPaper-root MuiPaper-elevation1 MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-rounded"
+  >
+    <div
+      aria-controls="panel1a-content"
+      aria-disabled={false}
+      aria-expanded={false}
+      className="MuiButtonBase-root MuiExpansionPanelSummary-root makeStyles-expansionSummary-311"
+      id="panel1a-header"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <div
+        className="MuiExpansionPanelSummary-content"
+      >
+        <p
+          className="MuiTypography-root makeStyles-heading-309 MuiTypography-body1"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "Type '{}' is not assignable to type 'T'",
+            }
+          }
+        />
+      </div>
+      <div
+        aria-disabled={false}
+        aria-hidden={true}
+        className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role={null}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div
+      className="MuiCollapse-container MuiCollapse-hidden"
+      style={
+        Object {
+          "minHeight": "0px",
+        }
+      }
+    >
+      <div
+        className="MuiCollapse-wrapper"
+      >
+        <div
+          className="MuiCollapse-wrapperInner"
+        >
+          <div
+            aria-labelledby="panel1a-header"
+            id="panel1a-content"
+            role="region"
+          >
+            <div
+              className="MuiExpansionPanelDetails-root makeStyles-extensionDetail-310"
+            >
+              <div
+                className="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column MuiGrid-wrap-xs-nowrap"
+              >
+                <div
+                  className="MuiGrid-root makeStyles-link-315 MuiGrid-item"
+                >
+                  <a
+                    className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+                    href="https://stackoverflow.com/questions/123456"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                  >
+                    Link to question on StackOverflow
+                  </a>
+                </div>
+                <div
+                  className="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-wrap-xs-nowrap"
+                >
+                  <div
+                    className="MuiGrid-root makeStyles-qaGridItem-313 MuiGrid-item"
+                  >
+                    Q
+                  </div>
+                  <div
+                    className="MuiGrid-root makeStyles-contentsGridItem-312 MuiGrid-item"
+                  >
+                    <div
+                      className="makeStyles-root-519"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "<pre class='itembodypre'><code class='itembodycode'>function f1<T extends {[prop: string]: any}}>(a: T = {}) {\\\\n    console.log(a)\\\\n}\\\\n</code></pre>\\\\n\\\\n<blockquote>\\\\n  <p class='itembodyp'>Error: Type '{}' is not assignable to type 'T'.</p>\\\\n</blockquote>\\\\n\\\\n<p class='itembodyp'>im trying to give a a default value. im not trying to give T a default type. </p>\\\\n\\\\n<p class='itembodyp'>I'm not sure what is the problem.</p>\\\\n",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+                <div
+                  className="MuiGrid-root MuiGrid-item"
+                >
+                  <hr
+                    className="MuiDivider-root makeStyles-divider-314"
+                  />
+                </div>
+                <div
+                  className="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-wrap-xs-nowrap"
+                >
+                  <div
+                    className="MuiGrid-root makeStyles-qaGridItem-313 MuiGrid-item"
+                  >
+                    A
+                  </div>
+                  <div
+                    className="MuiGrid-root makeStyles-contentsGridItem-312 MuiGrid-item"
+                  >
+                    <div
+                      className="makeStyles-root-519"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "<p class='itembodyp'>Consider  the following example</p>\\\\n\\\\n<pre class='itembodypre'><code class='itembodycode'>type A = { [prop: string]: any };\\\\ntype B = { [prop: string]: any; prop1: string };\\\\n</code></pre>\\\\n\\\\n<p class='itembodyp'>Does type <code class='itembodycode'>B</code> extend type <code class='itembodycode'>A</code>? Yes!</p>\\\\n\\\\n<p class='itembodyp'>But the following will not work</p>\\\\n\\\\n<pre class='itembodypre'><code class='itembodycode'>let a: A = {};\\\\nlet b: B = a; // Error\\\\n</code></pre>\\\\n\\\\n<p class='itembodyp'>It's clear that type <code class='itembodycode'>A</code> misses required property <code class='itembodycode'>prop1</code>, so variable <code class='itembodycode'>a</code> is not assignable to variable <code class='itembodycode'>b</code>.</p>\\\\n\\\\n<p class='itembodyp'>The same issue is with your function. When you do</p>\\\\n\\\\n<pre class='itembodypre'><code class='itembodycode'>function f1<T extends { [prop: string]: any }>(a: T = {}) {\\\\n    console.log(a);\\\\n}\\\\n</code></pre>\\\\n\\\\n<p class='itembodyp'>Compiler says that object <code class='itembodycode'>{}</code> is not assignable to type <code class='itembodycode'>T</code>. If this worked, you could do</p>\\\\n\\\\n<pre class='itembodypre'><code class='itembodycode'>f1<B>();  // a will equal to {} and misses required prop1\\\\n</code></pre>\\\\n\\\\n<p class='itembodyp'>This may not look like error, as inside <code class='itembodycode'>f1</code> you only know that <code class='itembodycode'>T extends { [prop: string]: any }</code> and know nothing about <code class='itembodycode'>prop1</code>. But consider if you want return <code class='itembodycode'>T</code>:</p>\\\\n\\\\n<pre class='itembodypre'><code class='itembodycode'>function f1<T extends { [prop: string]: any }>(a: T = {}): T {\\\\n    console.log(a);\\\\n    return a;\\\\n}\\\\n</code></pre>\\\\n\\\\n<p class='itembodyp'>If this code would work it would introduce a bug</p>\\\\n\\\\n<pre class='itembodypre'><code class='itembodycode'>let bb: B = f1<B>();  // Here bb will be equal to empty object\\\\nlet s: string = bb.prop1;  // Compiler will not show error, as it thinks that bb has prop1 of type string. But in reality it is undefined.\\\\n</code></pre>\\\\n\\\\n<p class='itembodyp'>So there are following solutions to consider:</p>\\\\n\\\\n<ol>\\\\n<li><p class='itembodyp'>Remove all generics. Type <code class='itembodycode'>{ [prop: string]: any }</code> is generic by itself so it may suit your needs</p>\\\\n\\\\n<pre class='itembodypre'><code class='itembodycode'>function f1(a: { [prop: string]: any } = {}) {\\\\n    console.log(a);\\\\n    return a;\\\\n}\\\\n</code></pre></li>\\\\n<li><p class='itembodyp'>Make <code class='itembodycode'>a</code> fully optional. In this case <code class='itembodycode'>a</code> may equal to <code class='itembodycode'>undefined</code> and compiler would know about it. </p>\\\\n\\\\n<pre class='itembodypre'><code class='itembodycode'>function f1<T extends { [prop: string]: any } = {}>(a?: T) {\\\\n    console.log(a);\\\\n}\\\\n</code></pre>\\\\n\\\\n<p class='itembodyp'>If you return <code class='itembodycode'>a</code> compiler will tell you that you should either return union type (with <code class='itembodycode'>undefined</code>) or check in function body that <code class='itembodycode'>a</code> is not <code class='itembodycode'>undefined</code>.</p></li>\\\\n<li><p class='itembodyp'>Worst case from my point of view is to use type cast as already suggested</p>\\\\n\\\\n<pre class='itembodypre'><code class='itembodycode'>function f1<T extends { [prop: string]: any }>(a: T = {} as T) {\\\\n    console.log(a);\\\\n}\\\\n</code></pre>\\\\n\\\\n<p class='itembodyp'>But be careful and don't forget that you can miss some required properties in this case.</p></li>\\\\n</ol>\\\\n",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots AnswerListItemLoading default 1`] = `
+<div
+  className="makeStyles-root-526"
+>
+  <div
+    className="MuiPaper-root MuiPaper-elevation1 MuiExpansionPanel-root makeStyles-expansionPanel-527 Mui-disabled MuiExpansionPanel-rounded MuiPaper-rounded"
+  >
+    <div
+      aria-controls="panel1a-content"
+      aria-disabled={true}
+      aria-expanded={false}
+      className="MuiButtonBase-root MuiExpansionPanelSummary-root Mui-disabled Mui-disabled"
+      id="panel1a-header"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex={-1}
+    >
+      <div
+        className="MuiExpansionPanelSummary-content"
+      >
+        <div
+          className="MuiLinearProgress-root MuiLinearProgress-colorPrimary makeStyles-lineralProgress-528 MuiLinearProgress-indeterminate"
+          role="progressbar"
+        >
+          <div
+            className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Indeterminate"
+            style={Object {}}
+          />
+          <div
+            className="MuiLinearProgress-bar MuiLinearProgress-bar2Indeterminate MuiLinearProgress-barColorPrimary"
+            style={Object {}}
+          />
+        </div>
+      </div>
+      <div
+        aria-disabled={false}
+        aria-hidden={true}
+        className="MuiButtonBase-root MuiIconButton-root MuiExpansionPanelSummary-expandIcon MuiIconButton-edgeEnd"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role={null}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div
+      className="MuiCollapse-container MuiCollapse-hidden"
+      style={
+        Object {
+          "minHeight": "0px",
+        }
+      }
+    >
+      <div
+        className="MuiCollapse-wrapper"
+      >
+        <div
+          className="MuiCollapse-wrapperInner"
+        >
+          <div
+            aria-labelledby="panel1a-header"
+            id="panel1a-content"
+            role="region"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Home default 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+>
+  <p
+    className="MuiTypography-root makeStyles-header-615 MuiTypography-body1"
+  >
+    Reasons to create this app
+  </p>
+  <p
+    className="MuiTypography-root makeStyles-typography-614 MuiTypography-body1 MuiTypography-paragraph"
+  >
+    I carefully read Auth0 requirements for several jobs and many time seen suggestion to give link for personal blog.
+    <br />
+    I'm not active blogger (may be yet?) so I've decided to share my best posts on StackOverflow. They can be considered as short blog posts.
+    <br />
+    Also this app is located on glitch.com to showcase my development shills
+  </p>
+  <p
+    className="MuiTypography-root makeStyles-header-615 MuiTypography-body1"
+  >
+    How does it works
+  </p>
+  <p
+    className="MuiTypography-root makeStyles-typography-614 MuiTypography-body1 MuiTypography-paragraph"
+  >
+    This application will fetch selected posts from StackOverflow and present them grouped by primary Tag.
+  </p>
+  <div
+    className="MuiTypography-root makeStyles-typography-614 MuiTypography-body1 MuiTypography-paragraph"
+  >
+    Application (SPA) is based on:
+    <ul>
+      <li>
+        React
+      </li>
+      <li>
+        Typescript
+      </li>
+      <li>
+        Redux for storing state (questions and answers)
+      </li>
+      <li>
+        Redux-Saga for async actions like fetching posts
+      </li>
+      <li>
+        Storybook for developing components in isolation
+      </li>
+      <li>
+        Jest for unittesting
+      </li>
+      <li>
+        Material UI for building interface
+      </li>
+    </ul>
+  </div>
+  <p
+    className="MuiTypography-root makeStyles-typography-614 MuiTypography-body1 MuiTypography-paragraph"
+  >
+    Source is located on 
+    <a
+      className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+      href="https://github.com/fyodore82/so_showcase"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      GitHub
+    </a>
+  </p>
+  <p
+    className="MuiTypography-root makeStyles-typography-614 MuiTypography-body1 MuiTypography-paragraph"
+  >
+    Then app is built and put on gist where you can explore it.
+  </p>
+  <p
+    className="MuiTypography-root makeStyles-typography-614 MuiTypography-body1 MuiTypography-paragraph"
+  >
+    Hope you enjoy it!
+  </p>
+</div>
+`;
+
+exports[`Storyshots ItemBody default 1`] = `
+<div
+  className="makeStyles-root-613"
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "<p class='itembodyp'>Consider  the following example</p>
+
+<pre class='itembodypre'><code class='itembodycode'>type A = { [prop: string]: any };
+type B = { [prop: string]: any; prop1: string };
+</code></pre>
+
+<p class='itembodyp'>Does type <code class='itembodycode'>B</code> extend type <code class='itembodycode'>A</code>? Yes!</p>
+
+<p class='itembodyp'>But the following will not work</p>
+
+<pre class='itembodypre'><code class='itembodycode'>let a: A = {};
+let b: B = a; // Error
+</code></pre>
+
+<p class='itembodyp'>It's clear that type <code class='itembodycode'>A</code> misses required property <code class='itembodycode'>prop1</code>, so variable <code class='itembodycode'>a</code> is not assignable to variable <code class='itembodycode'>b</code>.</p>
+
+<p class='itembodyp'>The same issue is with your function. When you do</p>
+
+<pre class='itembodypre'><code class='itembodycode'>function f1&lt;T extends { [prop: string]: any }&gt;(a: T = {}) {
+    console.log(a);
+}
+</code></pre>
+
+<p class='itembodyp'>Compiler says that object <code class='itembodycode'>{}</code> is not assignable to type <code class='itembodycode'>T</code>. If this worked, you could do</p>
+
+<pre class='itembodypre'><code class='itembodycode'>f1&lt;B&gt;();  // a will equal to {} and misses required prop1
+</code></pre>
+
+<p class='itembodyp'>This may not look like error, as inside <code class='itembodycode'>f1</code> you only know that <code class='itembodycode'>T extends { [prop: string]: any }</code> and know nothing about <code class='itembodycode'>prop1</code>. But consider if you want return <code class='itembodycode'>T</code>:</p>
+
+<pre class='itembodypre'><code class='itembodycode'>function f1&lt;T extends { [prop: string]: any }&gt;(a: T = {}): T {
+    console.log(a);
+    return a;
+}
+</code></pre>
+
+<p class='itembodyp'>If this code would work it would introduce a bug</p>
+
+<pre class='itembodypre'><code class='itembodycode'>let bb: B = f1&lt;B&gt;();  // Here bb will be equal to empty object
+let s: string = bb.prop1;  // Compiler will not show error, as it thinks that bb has prop1 of type string. But in reality it is undefined.
+</code></pre>
+
+<p class='itembodyp'>So there are following solutions to consider:</p>
+
+<ol>
+<li><p class='itembodyp'>Remove all generics. Type <code class='itembodycode'>{ [prop: string]: any }</code> is generic by itself so it may suit your needs</p>
+
+<pre class='itembodypre'><code class='itembodycode'>function f1(a: { [prop: string]: any } = {}) {
+    console.log(a);
+    return a;
+}
+</code></pre></li>
+<li><p class='itembodyp'>Make <code class='itembodycode'>a</code> fully optional. In this case <code class='itembodycode'>a</code> may equal to <code class='itembodycode'>undefined</code> and compiler would know about it. </p>
+
+<pre class='itembodypre'><code class='itembodycode'>function f1&lt;T extends { [prop: string]: any } = {}&gt;(a?: T) {
+    console.log(a);
+}
+</code></pre>
+
+<p class='itembodyp'>If you return <code class='itembodycode'>a</code> compiler will tell you that you should either return union type (with <code class='itembodycode'>undefined</code>) or check in function body that <code class='itembodycode'>a</code> is not <code class='itembodycode'>undefined</code>.</p></li>
+<li><p class='itembodyp'>Worst case from my point of view is to use type cast as already suggested</p>
+
+<pre class='itembodypre'><code class='itembodycode'>function f1&lt;T extends { [prop: string]: any }&gt;(a: T = {} as T) {
+    console.log(a);
+}
+</code></pre>
+
+<p class='itembodyp'>But be careful and don't forget that you can miss some required properties in this case.</p></li>
+</ol>
+",
+    }
+  }
+/>
+`;
+
+exports[`Storyshots MainScreen default 1`] = `
+<div
+  className="makeStyles-root-679"
+>
+  <header
+    className="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionFixed makeStyles-appBar-682 MuiAppBar-colorPrimary mui-fixed"
+  >
+    <div
+      className="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+    >
+      <h6
+        className="MuiTypography-root MuiTypography-h6 MuiTypography-noWrap"
+      >
+        My best answers on StackOverflow
+      </h6>
+    </div>
+  </header>
+  <div
+    className="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-753"
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation0 MuiDrawer-paper makeStyles-drawerPaper-754 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft"
+    >
+      <div
+        className="makeStyles-toolbar-755"
+      />
+      <hr
+        className="MuiDivider-root"
+      />
+      <ul
+        className="MuiList-root MuiList-padding"
+      >
+        <a
+          className="MuiListItem-root MuiListItem-gutters"
+          disabled={false}
+          href="/"
+          onClick={[Function]}
+        >
+          <div
+            className="MuiListItemIcon-root"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+              />
+            </svg>
+          </div>
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiListItemText-primary MuiTypography-body1"
+            >
+              Home
+            </span>
+          </div>
+        </a>
+        <a
+          className="MuiListItem-root MuiListItem-gutters"
+          disabled={false}
+          href="/typescript"
+          onClick={[Function]}
+        >
+          <div
+            className="MuiListItemIcon-root"
+          >
+            <img
+              alt=""
+              src="TS.svg"
+              style={
+                Object {
+                  "width": "24px",
+                }
+              }
+            />
+          </div>
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiListItemText-primary MuiTypography-body1"
+            >
+              TypeScript
+            </span>
+          </div>
+        </a>
+        <a
+          className="MuiListItem-root MuiListItem-gutters"
+          disabled={false}
+          href="/react"
+          onClick={[Function]}
+        >
+          <div
+            className="MuiListItemIcon-root"
+          >
+            <img
+              alt=""
+              src="React.svg"
+              style={
+                Object {
+                  "width": "24px",
+                }
+              }
+            />
+          </div>
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiListItemText-primary MuiTypography-body1"
+            >
+              React
+            </span>
+          </div>
+        </a>
+        <a
+          className="MuiListItem-root MuiListItem-gutters"
+          disabled={false}
+          href="/redux"
+          onClick={[Function]}
+        >
+          <div
+            className="MuiListItemIcon-root"
+          >
+            <img
+              alt=""
+              src="Redux.svg"
+              style={
+                Object {
+                  "width": "24px",
+                }
+              }
+            />
+          </div>
+          <div
+            className="MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiListItemText-primary MuiTypography-body1"
+            >
+              Redux
+            </span>
+          </div>
+        </a>
+      </ul>
+    </div>
+  </div>
+  <main
+    className="makeStyles-content-681"
+  >
+    <div
+      className="makeStyles-toolbar-680"
+    />
+    <div
+      className="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <p
+        className="MuiTypography-root makeStyles-header-808 MuiTypography-body1"
+      >
+        Reasons to create this app
+      </p>
+      <p
+        className="MuiTypography-root makeStyles-typography-807 MuiTypography-body1 MuiTypography-paragraph"
+      >
+        I carefully read Auth0 requirements for several jobs and many time seen suggestion to give link for personal blog.
+        <br />
+        I'm not active blogger (may be yet?) so I've decided to share my best posts on StackOverflow. They can be considered as short blog posts.
+        <br />
+        Also this app is located on glitch.com to showcase my development shills
+      </p>
+      <p
+        className="MuiTypography-root makeStyles-header-808 MuiTypography-body1"
+      >
+        How does it works
+      </p>
+      <p
+        className="MuiTypography-root makeStyles-typography-807 MuiTypography-body1 MuiTypography-paragraph"
+      >
+        This application will fetch selected posts from StackOverflow and present them grouped by primary Tag.
+      </p>
+      <div
+        className="MuiTypography-root makeStyles-typography-807 MuiTypography-body1 MuiTypography-paragraph"
+      >
+        Application (SPA) is based on:
+        <ul>
+          <li>
+            React
+          </li>
+          <li>
+            Typescript
+          </li>
+          <li>
+            Redux for storing state (questions and answers)
+          </li>
+          <li>
+            Redux-Saga for async actions like fetching posts
+          </li>
+          <li>
+            Storybook for developing components in isolation
+          </li>
+          <li>
+            Jest for unittesting
+          </li>
+          <li>
+            Material UI for building interface
+          </li>
+        </ul>
+      </div>
+      <p
+        className="MuiTypography-root makeStyles-typography-807 MuiTypography-body1 MuiTypography-paragraph"
+      >
+        Source is located on 
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+          href="https://github.com/fyodore82/so_showcase"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          GitHub
+        </a>
+      </p>
+      <p
+        className="MuiTypography-root makeStyles-typography-807 MuiTypography-body1 MuiTypography-paragraph"
+      >
+        Then app is built and put on gist where you can explore it.
+      </p>
+      <p
+        className="MuiTypography-root makeStyles-typography-807 MuiTypography-body1 MuiTypography-paragraph"
+      >
+        Hope you enjoy it!
+      </p>
+    </div>
+  </main>
+</div>
+`;

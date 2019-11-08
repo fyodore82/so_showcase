@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Divider from '@material-ui/core/Divider';
 import Grid from '@material-ui/core/Grid'
+import Link from '@material-ui/core/Link'
 
 import { ItemBody } from '../ItemBody'
 
@@ -31,22 +32,32 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     contentsGridItem: {
       flexGrow: 1,
+      minWidth: 0,
     },
     qaGridItem: {
       fontSize: 'xx-large',
       padding: '1rem',
     },
+    divider: {
+      height: '3px',
+      margin: '1rem',
+    },
+    link: {
+      alignSelf: 'flex-end',
+      margin: '0.5rem'
+    }
   }),
 );
 
 interface AnswerListItemOwnProps {
+  questionNum: string;
   header: string;
   question: string;
   answer: string;
 }
 
 export const AnswerListItem: FC<AnswerListItemOwnProps> = ({
-  header, question, answer
+  header, question, answer, questionNum
 }) => {
   const classes = useStyles();
 
@@ -62,34 +73,32 @@ export const AnswerListItem: FC<AnswerListItemOwnProps> = ({
           <Typography className={classes.heading} dangerouslySetInnerHTML={{ '__html': header }} />
         </ExpansionPanelSummary>
         <ExpansionPanelDetails className={classes.extensionDetail}>
-          <Grid container direction="column">
-            <Grid item>
-              <Grid container direction="row">
-                <Grid item className={classes.qaGridItem}>
-                  Q
+          <Grid container direction="column" wrap="nowrap">
+            <Grid className={classes.link} item>
+              <Link  href={`https://stackoverflow.com/questions/${questionNum}`}>Link to question on StackOverflow</Link>
             </Grid>
-                <Grid item className={classes.contentsGridItem}>
-                  <ItemBody bodyText={question} />
+            <Grid item container direction="row" wrap="nowrap">
+              <Grid item className={classes.qaGridItem}>
+                Q
                 </Grid>
+              <Grid item className={classes.contentsGridItem}>
+                <ItemBody bodyText={question} />
               </Grid>
             </Grid>
             <Grid item>
-              <Divider/>
+              <Divider className={classes.divider} />
             </Grid>
-            <Grid item>
-              <Grid container direction="row">
-                <Grid item className={classes.qaGridItem}>
-                  A
-            </Grid>
-                <Grid item className={classes.contentsGridItem}>
-                  <ItemBody bodyText={answer} />
+            <Grid item container direction="row" wrap="nowrap">
+              <Grid item className={classes.qaGridItem}>
+                A
                 </Grid>
+              <Grid item className={classes.contentsGridItem}>
+                <ItemBody bodyText={answer} />
               </Grid>
             </Grid>
           </Grid>
         </ExpansionPanelDetails>
       </ExpansionPanel>
-
     </div>
   );
 }

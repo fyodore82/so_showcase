@@ -11,6 +11,10 @@ const useStyles = makeStyles((theme: Theme) =>
     typography: {
       margin: '1rem',
     },
+    header: {
+      fontWeight: 'bold',
+      margin: '1rem',
+    },
   }),
 );
 
@@ -18,11 +22,26 @@ export const Home: FC = () => {
   const classes = useStyles();
   return (
     <Paper>
+      <Typography className={classes.header}>
+        Reasons to create this app
+      </Typography>
+      <Typography paragraph className={classes.typography}>
+        I carefully read Auth0 requirements for several jobs
+        and many time seen suggestion to give link for personal blog.
+        <br />
+        I'm not active blogger (may be yet?) so I've decided to share my best posts on StackOverflow.
+        They can be considered as short blog posts.
+        <br />
+        Also this app is located on glitch.com to showcase my development shills
+      </Typography>
+      <Typography className={classes.header}>
+        How does it works
+      </Typography>
       <Typography paragraph className={classes.typography}>
         This application will fetch selected posts from StackOverflow and present them
         grouped by primary Tag.
 </Typography>
-      <Typography paragraph className={classes.typography}>
+      <Typography paragraph className={classes.typography} component='div'>
         Application (SPA) is based on:
       <ul>
           <li>React</li>
@@ -35,10 +54,10 @@ export const Home: FC = () => {
         </ul>
       </Typography>
       <Typography paragraph className={classes.typography}>
-        Source is located on <Link href='https://github.com/fyodore82/so_showcase'>GitHub</Link>
+        The app is built from source, which is located on <Link href='https://github.com/fyodore82/so_showcase'>GitHub</Link>
       </Typography>
       <Typography paragraph className={classes.typography}>
-        Then app is built and put on gist where you can explore it.
+        Then app is built and put on Glitch where you can explore it.
       </Typography>
       <Typography paragraph className={classes.typography}>
         Hope you enjoy it!
