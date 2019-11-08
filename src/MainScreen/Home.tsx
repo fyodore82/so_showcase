@@ -11,6 +11,10 @@ const useStyles = makeStyles((theme: Theme) =>
     typography: {
       margin: '1rem',
     },
+    header: {
+      fontWeight: 'bold',
+      margin: '1rem',
+    },
   }),
 );
 
@@ -18,11 +22,26 @@ export const Home: FC = () => {
   const classes = useStyles();
   return (
     <Paper>
+      <Typography className={classes.header}>
+        Reasons to create this app
+      </Typography>
+      <Typography paragraph className={classes.typography}>
+        I carefully read Auth0 requirements for several jobs
+        and many time seen suggestion to give link for personal blog.
+        <br />
+        I'm not active blogger (may be yet?) so I've decided to share my best posts on StackOverflow.
+        They can be considered as short blog posts.
+        <br />
+        Also this app is located on glitch.com to showcase my development shills
+      </Typography>
+      <Typography className={classes.header}>
+        How does it works
+      </Typography>
       <Typography paragraph className={classes.typography}>
         This application will fetch selected posts from StackOverflow and present them
         grouped by primary Tag.
 </Typography>
-      <Typography paragraph className={classes.typography}>
+      <Typography paragraph className={classes.typography} component='div'>
         Application (SPA) is based on:
       <ul>
           <li>React</li>

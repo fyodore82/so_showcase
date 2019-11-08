@@ -1,4 +1,4 @@
-import { createStore, applyMiddleware, combineReducers, Store, StoreEnhancerStoreCreator, ReducersMapObject } from 'redux';
+import { createStore, applyMiddleware, combineReducers } from 'redux';
 import createSagaMiddleware from 'redux-saga'
 import { ApplicationState, reducers, rootSaga } from './store';
 

@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Divider from '@material-ui/core/Divider';
 import Grid from '@material-ui/core/Grid'
+import Link from '@material-ui/core/Link'
 
 import { ItemBody } from '../ItemBody'
 
@@ -40,18 +41,23 @@ const useStyles = makeStyles((theme: Theme) =>
     divider: {
       height: '3px',
       margin: '1rem',
+    },
+    link: {
+      alignSelf: 'flex-end',
+      margin: '0.5rem'
     }
   }),
 );
 
 interface AnswerListItemOwnProps {
+  questionNum: string;
   header: string;
   question: string;
   answer: string;
 }
 
 export const AnswerListItem: FC<AnswerListItemOwnProps> = ({
-  header, question, answer
+  header, question, answer, questionNum
 }) => {
   const classes = useStyles();
 
@@ -68,6 +74,9 @@ export const AnswerListItem: FC<AnswerListItemOwnProps> = ({
         </ExpansionPanelSummary>
         <ExpansionPanelDetails className={classes.extensionDetail}>
           <Grid container direction="column" wrap="nowrap">
+            <Grid className={classes.link} item>
+              <Link  href={`https://stackoverflow.com/questions/${questionNum}`}>Link to question on StackOverflow</Link>
+            </Grid>
             <Grid item container direction="row" wrap="nowrap">
               <Grid item className={classes.qaGridItem}>
                 Q
@@ -77,7 +86,7 @@ export const AnswerListItem: FC<AnswerListItemOwnProps> = ({
               </Grid>
             </Grid>
             <Grid item>
-              <Divider className={classes.divider}/>
+              <Divider className={classes.divider} />
             </Grid>
             <Grid item container direction="row" wrap="nowrap">
               <Grid item className={classes.qaGridItem}>

@@ -3,6 +3,7 @@ import { takeEvery, call, put } from 'redux-saga/effects';
 import Axios from 'axios';
 
 import { selectedAnswers, AnswerTags } from '../Constants'
+import { ProcessAxiosError } from '../ProcessAxiosError'
 
 export interface Answer {
   title: string;
@@ -25,6 +26,7 @@ export const initalAnswersState: AnswersState = {
 
 interface SOQuestions {
   items: {
+    "question_id": number;
     "accepted_answer_id": number;
     "title": string;
     "body": string;
@@ -49,10 +51,11 @@ export function* requestQAs() {
     for (k in selectedAnswers) {
       const { data: SOquestions }: { data: SOQuestions } = yield call(Axios.get,
         `https://api.stackexchange.com/2.2/questions/${selectedAnswers[k].questions.join(';')}?site=stackoverflow&filter=withbody`)
-      const { data: SOanswers }: { data: SOAnswers } = yield call(Axios.get,
-        `https://api.stackexchange.com/2.2/answers/${SOquestions.items.map(i => i.accepted_answer_id).join(';')}?site=stackoverflow&filter=withbody`)
-      const answers: Answers = SOquestions.items.reduce<Answers>((p, e, i) => {
-        p[e.accepted_answer_id] = {
+      const QuestionsWAcceptedA = SOquestions.items.filter(f => f.accepted_answer_id);
+        const { data: SOanswers }: { data: SOAnswers } = yield call(Axios.get,
+        `https://api.stackexchange.com/2.2/answers/${QuestionsWAcceptedA.map(i => i.accepted_answer_id).join(';')}?site=stackoverflow&filter=withbody`)
+      const answers: Answers = QuestionsWAcceptedA.reduce<Answers>((p, e, i) => {
+        p[e.question_id.toString()] = {
           title: e.title,
           question: e.body,
           answer: SOanswers.items[i].body,
@@ -63,7 +66,7 @@ export function* requestQAs() {
     }
   }
   catch (error) {
-    yield put<ReceiveQAsAction>({ type: 'RECEIVE_QA', error });
+    yield put<ReceiveQAsAction>({ type: 'RECEIVE_QA', error: ProcessAxiosError(error) });
   }
 }
 

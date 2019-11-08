@@ -65,22 +65,22 @@ test('requestQA saga test', () => {
   const gen = Answers.requestQAs();
   expect(gen.next().value).toStrictEqual(call(Axios.get,
     `https://api.stackexchange.com/2.2/questions/123;345?site=stackoverflow&filter=withbody`));
-  expect(gen.next({ data: { items: [{ "accepted_answer_id": 2345, title: '', body: '' }, { "accepted_answer_id": 7890, title: '', body: '' }] } }).value).toStrictEqual(call(Axios.get,
+  expect(gen.next({ data: { items: [{ question_id: 123, "accepted_answer_id": 2345, title: '', body: '' }, { question_id: 345, "accepted_answer_id": 7890, title: '', body: '' }] } }).value).toStrictEqual(call(Axios.get,
     `https://api.stackexchange.com/2.2/answers/2345;7890?site=stackoverflow&filter=withbody`));
   expect(gen.next({ data: { items: [{ body: '' }, { body: '' }] } } as any).value).toStrictEqual(put<Answers.ReceiveQAsAction>({
     type: 'RECEIVE_QA', tag: AnswerTags.typescript, answers: {
-      '2345': { title: '', question: '', answer: '', },
-      '7890': { title: '', question: '', answer: '', }
+      '123': { title: '', question: '', answer: '', },
+      '345': { title: '', question: '', answer: '', }
     }
   }))
   expect(gen.next().value).toStrictEqual(call(Axios.get,
     `https://api.stackexchange.com/2.2/questions/456?site=stackoverflow&filter=withbody`));
-  expect(gen.next({ data: { items: [{ "accepted_answer_id": 111, title: '', body: '' }, { "accepted_answer_id": 222, title: '', body: '' }] } }).value).toStrictEqual(call(Axios.get,
+  expect(gen.next({ data: { items: [{ question_id: 456, "accepted_answer_id": 111, title: '', body: '' }, { question_id: 334, "accepted_answer_id": 222, title: '', body: '' }] } }).value).toStrictEqual(call(Axios.get,
     `https://api.stackexchange.com/2.2/answers/111;222?site=stackoverflow&filter=withbody`));
   expect(gen.next({ data: { items: [{ body: '' }, { body: '' }] } } as any).value).toStrictEqual(put<Answers.ReceiveQAsAction>({
     type: 'RECEIVE_QA', tag: AnswerTags.react, answers: {
-      '111': { title: '', question: '', answer: '', },
-      '222': { title: '', question: '', answer: '', },
+      '456': { title: '', question: '', answer: '', },
+      '334': { title: '', question: '', answer: '', },
     }
   }));
   expect(gen.next().value).toStrictEqual(call(Axios.get,

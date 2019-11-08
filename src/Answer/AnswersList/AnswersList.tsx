@@ -31,7 +31,7 @@ export const AnswerList: FC<AnswerListOwnProps> = ({ isLoading, answers }) => {
       </>
       :
       answers && Object.entries(answers).map(([k, v]) => (
-        <AnswerListItem key={k} header={v.title} question={v.question} answer={v.answer} />
+        <AnswerListItem key={k} header={v.title} question={v.question} answer={v.answer} questionNum={k} />
       ))}
   </div>
   )
