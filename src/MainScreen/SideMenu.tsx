@@ -9,18 +9,25 @@ import { drawerWidth } from '../Constants'
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     drawer: {
-      width: drawerWidth,
+      overflowX: 'hidden',
+      width: theme.spacing(7) + 1,
       flexShrink: 0,
+      [theme.breakpoints.up('sm')]: {
+        width: drawerWidth,
+
+
+      }
     },
     drawerPaper: {
-      width: drawerWidth,
+      overflowX: 'hidden',
+      width: theme.spacing(7) + 1,
+
+      [theme.breakpoints.up('sm')]: {
+        width: drawerWidth,
+
+      }
     },
     toolbar: theme.mixins.toolbar,
-    content: {
-      flexGrow: 1,
-      backgroundColor: theme.palette.background.default,
-      padding: theme.spacing(3),
-    },
   }),
 );
 

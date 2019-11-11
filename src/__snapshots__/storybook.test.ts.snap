@@ -1208,7 +1208,7 @@ exports[`Storyshots Home default 1`] = `
   <p
     className="MuiTypography-root makeStyles-typography-614 MuiTypography-body1 MuiTypography-paragraph"
   >
-    Source is located on 
+    The app is built from source, which is located on 
     <a
       className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
       href="https://github.com/fyodore82/so_showcase"
@@ -1221,7 +1221,7 @@ exports[`Storyshots Home default 1`] = `
   <p
     className="MuiTypography-root makeStyles-typography-614 MuiTypography-body1 MuiTypography-paragraph"
   >
-    Then app is built and put on gist where you can explore it.
+    Then app is built and put on Glitch where you can explore it.
   </p>
   <p
     className="MuiTypography-root makeStyles-typography-614 MuiTypography-body1 MuiTypography-paragraph"
@@ -1474,12 +1474,12 @@ exports[`Storyshots MainScreen default 1`] = `
       className="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
     >
       <p
-        className="MuiTypography-root makeStyles-header-808 MuiTypography-body1"
+        className="MuiTypography-root makeStyles-header-807 MuiTypography-body1"
       >
         Reasons to create this app
       </p>
       <p
-        className="MuiTypography-root makeStyles-typography-807 MuiTypography-body1 MuiTypography-paragraph"
+        className="MuiTypography-root makeStyles-typography-806 MuiTypography-body1 MuiTypography-paragraph"
       >
         I carefully read Auth0 requirements for several jobs and many time seen suggestion to give link for personal blog.
         <br />
@@ -1488,17 +1488,17 @@ exports[`Storyshots MainScreen default 1`] = `
         Also this app is located on glitch.com to showcase my development shills
       </p>
       <p
-        className="MuiTypography-root makeStyles-header-808 MuiTypography-body1"
+        className="MuiTypography-root makeStyles-header-807 MuiTypography-body1"
       >
         How does it works
       </p>
       <p
-        className="MuiTypography-root makeStyles-typography-807 MuiTypography-body1 MuiTypography-paragraph"
+        className="MuiTypography-root makeStyles-typography-806 MuiTypography-body1 MuiTypography-paragraph"
       >
         This application will fetch selected posts from StackOverflow and present them grouped by primary Tag.
       </p>
       <div
-        className="MuiTypography-root makeStyles-typography-807 MuiTypography-body1 MuiTypography-paragraph"
+        className="MuiTypography-root makeStyles-typography-806 MuiTypography-body1 MuiTypography-paragraph"
       >
         Application (SPA) is based on:
         <ul>
@@ -1526,9 +1526,9 @@ exports[`Storyshots MainScreen default 1`] = `
         </ul>
       </div>
       <p
-        className="MuiTypography-root makeStyles-typography-807 MuiTypography-body1 MuiTypography-paragraph"
+        className="MuiTypography-root makeStyles-typography-806 MuiTypography-body1 MuiTypography-paragraph"
       >
-        Source is located on 
+        The app is built from source, which is located on 
         <a
           className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
           href="https://github.com/fyodore82/so_showcase"
@@ -1539,12 +1539,12 @@ exports[`Storyshots MainScreen default 1`] = `
         </a>
       </p>
       <p
-        className="MuiTypography-root makeStyles-typography-807 MuiTypography-body1 MuiTypography-paragraph"
+        className="MuiTypography-root makeStyles-typography-806 MuiTypography-body1 MuiTypography-paragraph"
       >
-        Then app is built and put on gist where you can explore it.
+        Then app is built and put on Glitch where you can explore it.
       </p>
       <p
-        className="MuiTypography-root makeStyles-typography-807 MuiTypography-body1 MuiTypography-paragraph"
+        className="MuiTypography-root makeStyles-typography-806 MuiTypography-body1 MuiTypography-paragraph"
       >
         Hope you enjoy it!
       </p>

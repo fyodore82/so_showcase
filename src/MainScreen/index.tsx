@@ -31,8 +31,13 @@ const useStyles = makeStyles((theme: Theme) =>
       padding: theme.spacing(3),
 
       height: '100%',
-      width: `calc(100% - ${drawerWidth}px)`,
-      left: drawerWidth,
+      width: `calc(100% - ${theme.spacing(7) + 1}px)`,
+      left: theme.spacing(7) + 1,
+
+      [theme.breakpoints.up('sm')]: {
+        left: drawerWidth,
+        width: `calc(100% - ${drawerWidth}px)`,
+      },
       top: 0,
       position: "absolute",
       display: 'flex',
@@ -42,15 +47,15 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 const ReactIcon: FC = () => (
-  <img src={ReactLogo} alt='' style={{width: '24px'}}/>
+  <img src={ReactLogo} alt='' style={{ width: '24px' }} />
 )
 
 const TSIcon: FC = () => (
-  <img src={TSLogo} alt='' style={{width: '24px'}}/>
+  <img src={TSLogo} alt='' style={{ width: '24px' }} />
 )
 
 const ReduxIcon: FC = () => (
-  <img src={ReduxLogo} alt='' style={{width: '24px'}}/>
+  <img src={ReduxLogo} alt='' style={{ width: '24px' }} />
 )
 
 const MunuAndRoutes: {
