@@ -10,9 +10,12 @@ import { drawerWidth } from '../Constants'
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     appBar: {
-      width: `calc(100% - ${drawerWidth}px)`,
-      marginLeft: drawerWidth,
-    },
+      zIndex: theme.zIndex.drawer + 1,
+      [theme.breakpoints.up('sm')]: {
+        width: `calc(100% - ${drawerWidth}px)`,
+        marginLeft: drawerWidth,
+      }
+    }
   }),
 );
 
