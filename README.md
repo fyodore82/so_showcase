@@ -1,4 +1,4 @@
-This is demo project for appling to Auth0. You're free to use any part of it.
+This is demo project to showcse my skills. You're free to use any part of it.
 
 ## Reasons to create this app
 
