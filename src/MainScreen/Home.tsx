@@ -26,11 +26,7 @@ export const Home: FC = () => {
         Reasons to create this app
       </Typography>
       <Typography paragraph className={classes.typography}>
-        I carefully read Auth0 requirements for several jobs
-        and many time seen suggestion to give link for personal blog.
-        <br />
-        I'm not active blogger (may be yet?) so I've decided to share my best posts on StackOverflow.
-        They can be considered as short blog posts.
+        I've created this app to showcase my skills. Creating this app took about 5 days with 2-4 hours dedicated daily
         <br />
         Also this app is located on glitch.com to showcase my development shills
       </Typography>
